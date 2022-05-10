@@ -25,6 +25,7 @@ Future<FirebaseApp> _initializeFirebase() async {
   if (user != null) {
     //route to home page and pass user
   }
+  //createReader();
   return firebaseApp;
 }
 

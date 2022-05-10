@@ -26,6 +26,10 @@ void main() {
   );
 }
 
+void createReader() {
+  reader = RSSReader();
+}
+
 //Color background = Color.fromRGBO(18, 22, 64, 1);
 Color background = Colors.black87;
 //Color background = Colors.white;

@@ -38,10 +38,11 @@ class RSSReader {
   RSSReader() {
     //firebaseFeeds = fetchRSS();
     //fetchRSS();
-    //Future.delayed(Duration(seconds: 2));
+    //Future.delayed(Duration(seconds: 5));
     for (var element in urls) {
+      // print(firebaseFeeds.length);
       //print("element: ");
-      //print(element);
+      // print(element);
       load(element);
     }
 
@@ -50,20 +51,22 @@ class RSSReader {
   }
 
   void fetchRSS() async {
-    List<String> feeds = [];
+    List<String> links = [];
     var snapshot = await FirebaseFirestore.instance
         .collection('podcasts')
         .doc('rss_feeds')
         .get();
+    Future.delayed(Duration(seconds: 2));
     Map<String, dynamic> docData = snapshot.data()!;
     docData.forEach((key, value) {
-      feeds.add(docData[key].toString());
+      links.add(docData[key].toString());
     });
-    firebaseFeeds = feeds;
+    firebaseFeeds = links;
     //return feeds;
   }
 
   Future<List<RssFeed?>?> fetchPodcasts() async {
+    //Future.delayed(Duration(seconds: 2));
     if (feeds.length == urls.length) {
       return feeds;
     } else {
@@ -80,6 +83,8 @@ class RSSReader {
     if (feeds.length == urls.length) {
       return true;
     } else {
+      print(firebaseFeeds.length);
+      print(feeds.length);
       return throw Exception("Exception");
     }
 
