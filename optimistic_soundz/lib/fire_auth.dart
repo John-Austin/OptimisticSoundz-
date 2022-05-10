@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FireAuth {
-  static Future<User?> registerUsingEmailPassword({
-    required String name,
-    required String email,
-    required String password,
-  }) async {
+  static Future<User?> registerUsingEmailPassword(
+      {required String name,
+      required String email,
+      required String password,
+      required String podcaster,
+      required String premium}) async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user;
     try {
@@ -23,8 +24,8 @@ class FireAuth {
       FirebaseFirestore.instance.collection("users").doc(user!.uid).set({
         "username": name,
         "uid": user.uid,
-        "podcasterbool": false,
-        "premiumbool": false,
+        "podcasterbool": podcaster,
+        "premiumbool": premium,
         "points": 0
       }).then((_) => print("success"));
       // await FirebaseFirestore.instance.collection('users').add(); //how to add user to users in firestore?

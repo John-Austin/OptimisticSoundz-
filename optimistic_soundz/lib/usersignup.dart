@@ -30,6 +30,7 @@ class SignUp extends StatefulWidget {
 }
 
 class _LoginDemoState extends State<SignUp> {
+  //bool checkedValue = false;
   final _registerFormKey = GlobalKey<FormState>();
 
   final _usernameTextController = TextEditingController();
@@ -42,6 +43,7 @@ class _LoginDemoState extends State<SignUp> {
 
   bool _isProcessing = false;
   bool checkedValue = false;
+  bool premValue = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -108,6 +110,29 @@ class _LoginDemoState extends State<SignUp> {
                     validator: (value) =>
                         Validator.validatePassword(password: value!),
                   ),
+                  CheckboxListTile(
+                      value: checkedValue,
+                      title: Text("Register as Podcaster"),
+                      activeColor: Colors.white,
+                      checkColor: accent,
+                      onChanged: (newValue) {
+                        setState(() {
+                          checkedValue = newValue!;
+                        });
+                      }),
+                  Padding(
+                    padding: EdgeInsets.all(3),
+                  ),
+                  CheckboxListTile(
+                      value: premValue,
+                      title: Text("Premium Account"),
+                      activeColor: Colors.white,
+                      checkColor: accent,
+                      onChanged: (newPremValue) {
+                        setState(() {
+                          premValue = newPremValue!;
+                        });
+                      }),
                   Row(children: [
                     Expanded(
                       child: ElevatedButton(
@@ -119,10 +144,11 @@ class _LoginDemoState extends State<SignUp> {
                           if (_registerFormKey.currentState!.validate()) {
                             User? user =
                                 await FireAuth.registerUsingEmailPassword(
-                              name: _usernameTextController.text,
-                              email: _emailTextController.text,
-                              password: _passwordTextController.text,
-                            );
+                                    name: _usernameTextController.text,
+                                    email: _emailTextController.text,
+                                    password: _passwordTextController.text,
+                                    premium: premValue.toString(),
+                                    podcaster: checkedValue.toString());
 
                             if (user != null) {
                               Navigator.of(context).pushAndRemoveUntil(
