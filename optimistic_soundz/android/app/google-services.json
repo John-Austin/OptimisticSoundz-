@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "124024311494",
+    "firebase_url": "https://optimistic-soundz-app-default-rtdb.firebaseio.com",
+    "project_id": "optimistic-soundz-app",
+    "storage_bucket": "optimistic-soundz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124024311494:android:84077fef53ad05872851c7",
+        "android_client_info": {
+          "package_name": "com.example.adminportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124024311494-mu48rvqk3br200nuq4ti585rn9qpoesn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW9eTobNz53YX7-K89id2ddeb0hlQLHZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124024311494-mu48rvqk3br200nuq4ti585rn9qpoesn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "124024311494-fn9q08snh264h0cr24gjq0qde0m3kjbf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "q"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124024311494:android:c42c5cbbd63b05912851c7",
+        "android_client_info": {
+          "package_name": "com.example.optimistic_soundz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124024311494-mu48rvqk3br200nuq4ti585rn9qpoesn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW9eTobNz53YX7-K89id2ddeb0hlQLHZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124024311494-mu48rvqk3br200nuq4ti585rn9qpoesn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "124024311494-fn9q08snh264h0cr24gjq0qde0m3kjbf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "q"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124024311494:android:66c4840736df17512851c7",
+        "android_client_info": {
+          "package_name": "come.example.optimistic_soundz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124024311494-mu48rvqk3br200nuq4ti585rn9qpoesn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW9eTobNz53YX7-K89id2ddeb0hlQLHZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124024311494-mu48rvqk3br200nuq4ti585rn9qpoesn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "124024311494-fn9q08snh264h0cr24gjq0qde0m3kjbf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "q"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
