@@ -49,7 +49,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDW9eTobNz53YX7-K89id2ddeb0hlQLHZQ',
-    appId: '1:124024311494:android:c42c5cbbd63b05912851c7',
+    appId: '1:124024311494:android:5392225e98759e3c2851c7',
     messagingSenderId: '124024311494',
     projectId: 'optimistic-soundz-app',
     databaseURL: 'https://optimistic-soundz-app-default-rtdb.firebaseio.com',

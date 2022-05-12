@@ -1,4 +1,4 @@
-package com.example.optimistic_soundz
+package com.podcast.optimistic_soundz
 
 import io.flutter.embedding.android.FlutterActivity
 

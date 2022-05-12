@@ -44,9 +44,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:124024311494:android:c42c5cbbd63b05912851c7",
+        "mobilesdk_app_id": "1:124024311494:android:0a82787bdf5074a72851c7",
         "android_client_info": {
-          "package_name": "com.example.optimistic_soundz"
+          "package_name": "com.example.webdashboard"
         }
       },
       "oauth_client": [
@@ -80,9 +80,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:124024311494:android:66c4840736df17512851c7",
+        "mobilesdk_app_id": "1:124024311494:android:5392225e98759e3c2851c7",
         "android_client_info": {
-          "package_name": "come.example.optimistic_soundz"
+          "package_name": "com.podcast.optimistic_soundz"
         }
       },
       "oauth_client": [
